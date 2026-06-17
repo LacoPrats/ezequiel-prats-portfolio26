@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ezequiel Prats — Product Designer</title>
+<title>Ezequiel Prats — UX Designer &amp; Front-end Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
-  --cream: #EEEAE3; --blue: #2F35E8; --blue-light: #5C61FF;
+  --cream: #F8F8F6; --blue: #111111; --blue-light: #333333;
   --dark: #1A1A1A; --mid: #6B6B6B; --light: #C8C4BC;
 }
 body { font-family: "Inter", sans-serif; font-weight: 300; background: var(--cream); color: var(--dark); overflow-x: hidden; line-height: 1.6; }
 
 /* NAV */
-nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 4.5rem; position: sticky; top: 0; background: var(--cream); z-index: 100; border-bottom: 0.5px solid rgba(0,0,0,0.08); }
+nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 4.5rem; position: sticky; top: 0; background: var(--cream); z-index: 100; border-bottom: 0.5px solid rgba(0,0,0,0.06); }
 .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 400; letter-spacing: 0.01em; }
-.logo-badge { width: 32px; height: 32px; background: var(--blue); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; letter-spacing: 0.05em; }
+.logo-badge { width: 32px; height: 32px; background: var(--blue); color: white; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; letter-spacing: 0.05em; }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; font-size: 12px; letter-spacing: 0.1em; color: var(--mid); font-weight: 400; }
 .nav-links a { color: inherit; text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover { color: var(--dark); }
-.nav-cta { background: var(--blue); color: white; border: none; padding: 0.55rem 1.25rem; border-radius: 999px; font-family: "Inter", sans-serif; font-size: 13px; font-weight: 400; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s, transform 0.15s; }
+.nav-cta { background: var(--blue); color: white; border: none; padding: 0.55rem 1.25rem; border-radius: 4px; font-family: "Inter", sans-serif; font-size: 13px; font-weight: 400; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s, transform 0.15s; }
 .nav-cta:hover { background: var(--blue-light); transform: translateY(-1px); }
 
 /* HERO */
@@ -31,16 +31,16 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .available-dot { width: 7px; height: 7px; background: #22C55E; border-radius: 50%; animation: pulse 2s infinite; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 .hero-name { font-family: "DM Serif Display", serif; font-size: clamp(3.5rem, 6vw, 5.5rem); line-height: 1.0; letter-spacing: -0.02em; margin-bottom: 0.2rem; font-weight: 400; }
-.hero-name-italic { font-style: italic; color: var(--blue); }
+.hero-name-italic { font-style: italic; color: var(--dark); }
 .hero-role { font-size: 11px; font-weight: 400; letter-spacing: 0.12em; color: var(--mid); margin: 1.5rem 0 0.75rem; text-transform: uppercase; }
 .hero-desc { font-size: 15px; line-height: 1.75; color: #4A4A4A; max-width: 400px; margin-bottom: 2rem; font-weight: 300; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-primary { background: var(--blue); color: white; border: none; padding: 0.7rem 1.5rem; border-radius: 999px; font-family: "Inter", sans-serif; font-size: 14px; font-weight: 400; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s, transform 0.15s; }
+.btn-primary { background: var(--blue); color: white; border: none; padding: 0.7rem 1.5rem; border-radius: 4px; font-family: "Inter", sans-serif; font-size: 14px; font-weight: 400; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s, transform 0.15s; }
 .btn-primary:hover { background: var(--blue-light); transform: translateY(-2px); }
-.btn-secondary { background: transparent; color: var(--dark); border: 1px solid rgba(0,0,0,0.2); padding: 0.7rem 1.5rem; border-radius: 999px; font-family: "Inter", sans-serif; font-size: 14px; font-weight: 300; cursor: pointer; transition: border-color 0.2s, transform 0.15s; }
+.btn-secondary { background: transparent; color: var(--dark); border: 1px solid rgba(0,0,0,0.2); padding: 0.7rem 1.5rem; border-radius: 4px; font-family: "Inter", sans-serif; font-size: 14px; font-weight: 300; cursor: pointer; transition: border-color 0.2s, transform 0.15s; }
 .btn-secondary:hover { border-color: var(--dark); transform: translateY(-2px); }
 .hero-right { position: relative; display: flex; justify-content: center; align-items: center; height: 560px; }
-.hero-photo-frame { width: 360px; height: 440px; border-radius: 20px; overflow: hidden; position: relative; }
+.hero-photo-frame { width: 360px; height: 440px; border-radius: 6px; overflow: hidden; position: relative; }
 .hero-photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
 .hero-pill { position: absolute; background: white; border: 0.5px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 0.6rem 1rem; display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 400; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
 .pill-top { top: 60px; right: -20px; }
@@ -55,7 +55,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .projects-section { padding: 5rem 4.5rem; }
 .section-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 3.5rem; }
 .section-title { font-family: "DM Serif Display", serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; letter-spacing: -0.02em; font-weight: 400; }
-.section-title-italic { font-style: italic; color: var(--blue); }
+.section-title-italic { font-style: italic; color: var(--dark); }
 .section-desc { font-size: 13px; color: var(--mid); max-width: 280px; text-align: right; line-height: 1.6; padding-top: 0.5rem; font-weight: 300; }
 
 .projects-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
@@ -96,7 +96,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .project-card.reverse { direction: rtl; }
 .project-card.reverse > * { direction: ltr; }
 
-.project-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; color: var(--blue); text-transform: uppercase; }
+.project-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; color: var(--mid); text-transform: uppercase; }
 .project-title { font-family: "DM Serif Display", serif; font-size: 1.65rem; line-height: 1.2; letter-spacing: -0.01em; color: var(--dark); font-weight: 400; }
 .project-desc { font-size: 14px; line-height: 1.75; color: var(--mid); font-weight: 300; }
 .project-highlight {
@@ -126,12 +126,16 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 
   /* HERO */
   .hero { grid-template-columns: 1fr; min-height: auto; padding: 3rem 1.5rem; gap: 2rem; }
-  .hero-left { order: 1; max-width: 100%; }
+  .hero-left { order: 1; max-width: 100%; text-align: center; }
   .hero-right { order: 2; height: auto; padding: 2rem 0; }
   .hero-photo-frame { width: min(280px, 80vw); height: min(340px, 96vw); }
   .hero-pill { display: none; }
   .deco-circle { display: none; }
   .scroll-indicator { display: none; }
+  .available-badge { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-role { text-align: center; }
+  .hero-desc { text-align: center; margin-left: auto; margin-right: auto; }
 
   /* PROJECTS */
   .projects-section { padding: 3rem 1.5rem; }
@@ -157,13 +161,25 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
   .stat-label { font-size: 10px; }
 
   /* CONTACT */
-  .contact-section { padding: 3.5rem 1.5rem 2.5rem; }
-  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-section { padding: 3.5rem 1.5rem 2.5rem; overflow: hidden; max-width: 100vw; }
+  .contact-section { padding: 3.5rem 1.5rem 2.5rem; overflow: hidden; max-width: 100vw; text-align: center; }
+  .contact-label { text-align: center; }
+  .contact-grid { display: flex !important; flex-direction: column !important; align-items: center; width: 100%; gap: 0; }
+  .contact-grid > div { width: 100%; }
+  .contact-title { text-align: center; font-size: 2.25rem; margin-bottom: 0.75rem; }
+  .contact-sub { text-align: center; font-size: 14px; }
+  .contact-location { text-align: center; margin-bottom: 1.5rem; }
+  .contact-right-col { width: 100%; max-width: 100%; padding-top: 0; align-items: center; }
+  .contact-email-btn { width: 100%; justify-content: center; box-sizing: border-box; }
+  .contact-find-label { text-align: center; }
+  .contact-link-row { text-align: left; box-sizing: border-box; max-width: 100%; }
+  .contact-link-row span:nth-child(2) { word-break: break-all; font-size: 12px; }
   .contact-title { font-size: 2.25rem; margin-bottom: 0.75rem; }
   .contact-sub { font-size: 14px; }
   .contact-email-btn { width: 100%; justify-content: center; box-sizing: border-box; }
-  .contact-link-row { font-size: 13px; overflow: hidden; }
-  .contact-link-row span:nth-child(2) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .contact-right-col { width: 100%; max-width: 100%; overflow: hidden; }
+  .contact-link-row { font-size: 13px; max-width: 100%; box-sizing: border-box; }
+  .contact-link-row span:nth-child(2) { word-break: break-all; font-size: 12px; }
   .contact-link-row:hover { transform: none; }
 
   /* FOOTER */
@@ -172,11 +188,11 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 }
 
 /* ABOUT */
-.about-section { background: #151515; color: white; padding: 6rem 4.5rem; position: relative; overflow: hidden; }
+.about-section { background: #0F0F0F; color: white; padding: 6rem 4.5rem; position: relative; overflow: hidden; }
 .about-noise { position: absolute; inset: 0; background-image: radial-gradient(ellipse at 80% 20%, rgba(47,53,232,0.18) 0%, transparent 60%), radial-gradient(ellipse at 10% 80%, rgba(47,53,232,0.10) 0%, transparent 50%); pointer-events: none; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; position: relative; z-index: 1; }
 .about-left { padding-top: 2rem; }
-.about-label { font-size: 10px; letter-spacing: 0.14em; color: var(--blue-light); font-weight: 400; text-transform: uppercase; margin-bottom: 1.5rem; }
+.about-label { font-size: 10px; letter-spacing: 0.14em; color: rgba(255,255,255,0.45); font-weight: 400; text-transform: uppercase; margin-bottom: 1.5rem; }
 .about-title { font-family: "DM Serif Display", serif; font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: 1.1; letter-spacing: -0.02em; color: white; font-weight: 400; }
 .about-title-muted { color: rgba(255,255,255,0.3); font-style: italic; }
 .about-right { display: flex; flex-direction: column; gap: 1.25rem; }
@@ -191,14 +207,14 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 
 /* CONTACT */
 .contact-section { background: var(--cream); padding: 6rem 4.5rem 4rem; }
-.contact-label { font-size: 10px; letter-spacing: 0.14em; color: var(--blue); font-weight: 400; text-transform: uppercase; margin-bottom: 1.5rem; }
+.contact-label { font-size: 10px; letter-spacing: 0.14em; color: var(--mid); font-weight: 400; text-transform: uppercase; margin-bottom: 1.5rem; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 .contact-title { font-family: "DM Serif Display", serif; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; letter-spacing: -0.03em; color: var(--dark); margin-bottom: 1.25rem; font-weight: 400; }
-.contact-title-italic { font-style: italic; }
+.contact-title-italic { font-style: italic; color: var(--dark); }
 .contact-sub { font-size: 15px; line-height: 1.75; color: var(--mid); font-weight: 300; }
 .contact-location { font-size: 13px; color: var(--light); margin-top: 0.75rem; font-weight: 300; }
 .contact-right-col { display: flex; flex-direction: column; gap: 1.25rem; padding-top: 0.5rem; }
-.contact-email-btn { background: var(--blue); color: white; border: none; padding: 0.9rem 2rem; border-radius: 999px; font-family: "Inter", sans-serif; font-size: 15px; font-weight: 400; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s, transform 0.15s; width: fit-content; }
+.contact-email-btn { background: var(--blue); color: white; border: none; padding: 0.9rem 2rem; border-radius: 4px; font-family: "Inter", sans-serif; font-size: 15px; font-weight: 400; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: background 0.2s, transform 0.15s; width: fit-content; }
 .contact-email-btn:hover { background: var(--blue-light); transform: translateY(-2px); }
 .contact-find-label { font-size: 10px; letter-spacing: 0.12em; color: var(--mid); text-transform: uppercase; font-weight: 400; }
 .contact-link-row { display: flex; align-items: center; gap: 1rem; background: white; border: 0.5px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 0.85rem 1.25rem; font-size: 14px; font-weight: 300; color: var(--dark); text-decoration: none; transition: border-color 0.2s, transform 0.15s; }
@@ -209,7 +225,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .site-footer { background: var(--cream); border-top: 0.5px solid rgba(0,0,0,0.08); padding: 1.25rem 4.5rem; display: flex; align-items: center; justify-content: space-between; }
 .footer-logo { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 400; }
 .footer-social { display: flex; gap: 8px; }
-.social-pill { width: 36px; height: 36px; border: 0.5px solid rgba(0,0,0,0.15); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 400; color: var(--mid); cursor: pointer; transition: border-color 0.2s, color 0.2s; text-decoration: none; }
+.social-pill { width: 36px; height: 36px; border: 0.5px solid rgba(0,0,0,0.15); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 400; color: var(--mid); cursor: pointer; transition: border-color 0.2s, color 0.2s; text-decoration: none; }
 .social-pill:hover { border-color: var(--blue); color: var(--blue); }
 .footer-copy { font-size: 12px; color: var(--light); font-weight: 300; }
 </style>
@@ -226,18 +242,14 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
     <li><a href="#about">ABOUT</a></li>
     <li><a href="#contact">CONTACT</a></li>
   </ul>
-  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in touch &rarr;</button>
+  <a href="CV-Ezequiel-ENG.pdf" download style="text-decoration:none;margin-right:8px;font-family:Inter,sans-serif;font-size:13px;font-weight:400;color:var(--dark);border-bottom:0.5px solid rgba(0,0,0,0.25);padding-bottom:2px;">Download CV</a><button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in touch &rarr;</button>
 </nav>
 
 <section class="hero">
   <div class="hero-left">
-    <div class="available-badge">
-      <span class="available-dot"></span>
-      AVAILABLE FOR WORK
-    </div>
-    <h1 class="hero-name">Ezequiel<br><span class="hero-name-italic">Prats.</span></h1>
-    <p class="hero-role">Product Designer</p>
-    <p class="hero-desc">Product Designer focused on turning complex systems into clear, usable experiences &mdash; combining research, UX thinking, and interface design. Currently exploring how AI can enhance products and workflows.</p>
+<h1 class="hero-name">Ezequiel<br><span class="hero-name-italic">Prats.</span></h1>
+    <p class="hero-role">UX Designer &amp; Front-end Developer</p>
+    <p class="hero-desc">UX Designer and Front-end Developer &mdash; I research, design and build digital products end to end. I care about interfaces that are clear, functional and well implemented. Currently integrating AI into my workflow to move faster without losing craft.</p>
     <div class="hero-actions">
       <button class="btn-primary" onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">See my work &rarr;</button>
       <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in touch</button>
@@ -251,7 +263,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
     </div>
     <div class="hero-pill pill-top">
       <div class="pill-icon">&#9776;</div>
-      UX/UI + Product
+      UX + Front-end
     </div>
     <div class="hero-pill pill-bottom">
       <div class="pill-icon">&#9733;</div>
@@ -283,7 +295,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
         <h3 class="project-title">AI UX Audit</h3>
         <p class="project-desc">A concept tool powered by AI that analyzes screenshots and delivers prioritized UX + accessibility fixes &mdash; ranked by impact and effort, in seconds.</p>
         <div class="project-highlight"><span class="project-highlight-dot">&#10022;</span> AI-powered UX insights ranked by impact and effort</div>
-        <a href="https://ux-audit-sable.vercel.app/" class="project-link">View project &rarr;</a>
+        <a href="ai-ux-audit.html" class="project-link">View case study &rarr;</a>
       </div>
     </div>
 
@@ -296,7 +308,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
         <h3 class="project-title">BCH Arquitectura</h3>
         <p class="project-desc">End-to-end design and development of a portfolio site for an architecture studio &mdash; visual hierarchy, project clarity, and a clean responsive system.</p>
         <div class="project-highlight"><span class="project-highlight-dot">&#10022;</span> Delivered a digital presence that showcases work with structure and clarity</div>
-        <a href="https://www.bcharquitectura.com.ar/" class="project-link">View live site &rarr;</a>
+        <a href="https://www.bcharquitectura.com.ar/" target="_blank" class="project-link">View case study &rarr;</a>
       </div>
     </div>
 
@@ -309,7 +321,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
         <h3 class="project-title">SmartBuy Consulting</h3>
         <p class="project-desc">Full product design for a consulting marketing site &mdash; information architecture, visual system, and responsive components built to improve credibility and conversions.</p>
         <div class="project-highlight"><span class="project-highlight-dot">&#10022;</span> Launched a site that clarifies the offer and strengthens brand trust</div>
-        <a href="https://smartbuyconsulting.com/" class="project-link">View live site &rarr;</a>
+        <a href="https://smart-buy-five.vercel.app/" target="_blank" class="project-link">View case study &rarr;</a>
       </div>
     </div>
 
@@ -330,7 +342,6 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
         <h3 class="project-title">This Portfolio</h3>
         <p class="project-desc">Designed and built using AI-assisted workflows &mdash; from visual direction to code implementation. A real example of how I use AI tools to accelerate product design without losing craft.</p>
         <div class="project-highlight"><span class="project-highlight-dot">&#10022;</span> From concept to deployed site in a single day</div>
-        <a href="#" class="project-link">View live site &rarr;</a>
       </div>
     </div>
 
@@ -345,7 +356,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
       <h2 class="about-title">Design meets<br><span class="about-title-muted">product thinking.</span></h2>
     </div>
     <div class="about-right">
-      <p class="about-para">I&apos;m a Product Designer focused on UX/UI, working across the full product lifecycle &mdash; from research and problem definition to interaction design and implementation.</p>
+      <p class="about-para">I&apos;m a UX Designer and Front-end Developer with a degree in Design from Universidad Torcuato Di Tella. I work across the full product lifecycle &mdash; from research and problem definition to interface design and frontend implementation.</p>
       <p class="about-para">I focus on simplifying complex user flows and bringing structure to early-stage (0&rarr;1) products, where clarity and usability are critical.</p>
       <hr class="about-divider">
       <p class="about-para">With a front-end background, I design with real constraints in mind. I prototype directly in code and work closely with developers to ensure ideas translate clearly into the final product.</p>
@@ -368,14 +379,14 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
       <p class="contact-location">Based in Argentina &middot; Open to remote work</p>
     </div>
     <div class="contact-right-col">
-        <a href="mailto:eze.prats13@gmail.com" class="contact-email-btn">Send me an email &rarr;</a>
+      <a href="mailto:eze.prats13@gmail.com" class="contact-email-btn">Send me an email &rarr;</a>
       <div class="contact-find-label">Find me on</div>
-      <a class="contact-link-row" href="https://www.linkedin.com/in/ezequiel-prats/" target="_blank">
+      <a class="contact-link-row" href="https://linkedin.com/in/ezequielprats" target="_blank">
         <span class="link-prefix">in</span>
         <span>linkedin.com/in/ezequielprats</span>
         <span style="margin-left:auto;color:var(--light);">&rarr;</span>
       </a>
-      <a class="contact-link-row" href="https://github.com/LacoPrats" target="_blank">
+      <a class="contact-link-row" href="https://github.com/ezequielprats" target="_blank">
         <span class="link-prefix">~</span>
         <span>github.com/ezequielprats</span>
         <span style="margin-left:auto;color:var(--light);">&rarr;</span>
@@ -390,9 +401,9 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
     Ezequiel Prats
   </div>
   <div class="footer-social">
-    <a class="social-pill" href="https://www.linkedin.com/in/ezequiel-prats/" target="_blank">in</a>
-    <a class="social-pill" href="https://github.com/LacoPrats" target="_blank">gh</a>
-    <a class="social-pill" href="mailto:eze.prats13@gmail.com">@</a>
+    <a class="social-pill" href="https://linkedin.com/in/ezequielprats" target="_blank">in</a>
+    <a class="social-pill" href="https://github.com/ezequielprats" target="_blank">gh</a>
+    <a class="social-pill" href="mailto:ezequielprats@email.com">@</a>
   </div>
   <span class="footer-copy">&copy; 2026 Ezequiel Prats</span>
 </footer>
