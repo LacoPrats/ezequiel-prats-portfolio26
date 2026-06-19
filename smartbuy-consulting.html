@@ -17,7 +17,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .nav-back { font-size: 13px; font-weight: 400; color: var(--mid); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
 .nav-back:hover { color: var(--dark); }
 
-.case-hero { padding: 5rem 7rem 4rem; max-width: 900px; }
+.case-hero { padding: 5rem 7rem 4rem; max-width: 900px; margin: 0 auto; }
 .case-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; color: var(--dark); text-transform: uppercase; margin-bottom: 1.25rem; display: block; }
 .case-title { font-family: "DM Serif Display", serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.05; letter-spacing: -0.02em; font-weight: 400; margin-bottom: 1.25rem; }
 .case-title em { font-style: italic; color: var(--dark); }
@@ -27,10 +27,10 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .meta-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); font-weight: 400; }
 .meta-value { font-size: 14px; font-weight: 400; color: var(--dark); }
 
-.case-hero-img { padding: 0 7rem; margin: 3rem 0; }
+.case-hero-img { padding: 0; margin: 3rem auto; max-width: 1100px; }
 .case-hero-img img { width: 100%; border-radius: 4px; display: block; box-shadow: 0 20px 60px rgba(0,0,0,0.10); }
 
-.case-content { max-width: 900px; padding: 0 4.5rem 6rem; }
+.case-content { max-width: 900px; padding: 0 7rem 6rem; margin: 0 auto; }
 .case-section { margin-bottom: 4rem; }
 .case-section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; color: var(--dark); text-transform: uppercase; margin-bottom: 1rem; display: block; }
 .case-section-title { font-family: "DM Serif Display", serif; font-size: 1.75rem; font-weight: 400; letter-spacing: -0.01em; margin-bottom: 1.25rem; }
@@ -43,10 +43,10 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .highlight-box li { font-size: 14px; color: var(--mid); font-weight: 300; display: flex; align-items: flex-start; gap: 10px; line-height: 1.6; }
 .highlight-box li::before { content: "&#10022;"; color: var(--dark); font-size: 10px; margin-top: 4px; flex-shrink: 0; }
 
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
 
 .img-block { margin: 2rem 0; }
-.img-block img { width: 100%; border-radius: 4px; border: 0.5px solid rgba(0,0,0,0.08); display: block; box-shadow: 0 8px 30px rgba(0,0,0,0.07); }
+.img-block img { width: 100%; border-radius: 4px; border: 0.5px solid rgba(0,0,0,0.08); display: block; box-shadow: 0 8px 30px rgba(0,0,0,0.07); max-width: 100%; }
 .img-caption { font-size: 12px; color: var(--light); text-align: center; margin-top: 0.75rem; font-weight: 300; }
 
 .flow-steps { display: flex; align-items: center; gap: 0; margin: 1.5rem 0; flex-wrap: wrap; gap: 8px; }

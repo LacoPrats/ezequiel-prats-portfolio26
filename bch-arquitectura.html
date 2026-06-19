@@ -8,29 +8,29 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-:root { --cream: #F8F8F6; --blue: #111111; --blue-light: #333333; --dark: #1A1A1A; --mid: #6B6B6B; --light: #C8C4BC; --olive: #555555; }
+:root { --cream: #F8F8F6; --blue: #111111; --blue-light: #333333; --dark: #1A1A1A; --mid: #6B6B6B; --light: #C8C4BC; }
 body { font-family: "Inter", sans-serif; font-weight: 300; background: var(--cream); color: var(--dark); overflow-x: hidden; line-height: 1.6; }
 
 nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 7rem; position: sticky; top: 0; background: var(--cream); z-index: 100; border-bottom: 0.5px solid rgba(0,0,0,0.08); }
 .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 400; text-decoration: none; color: var(--dark); }
-.logo-badge { width: 32px; height: 32px; background: var(--blue); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; }
-.nav-back { font-size: 13px; color: var(--mid); text-decoration: none; transition: color 0.2s; }
+.logo-badge { width: 32px; height: 32px; background: var(--blue); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; letter-spacing: 0.05em; }
+.nav-back { font-size: 13px; font-weight: 400; color: var(--mid); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
 .nav-back:hover { color: var(--dark); }
 
-.case-hero { padding: 5rem 7rem 4rem; max-width: 900px; }
+.case-hero { padding: 5rem 7rem 4rem; max-width: 900px; margin: 0 auto; }
 .case-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; color: var(--dark); text-transform: uppercase; margin-bottom: 1.25rem; display: block; }
 .case-title { font-family: "DM Serif Display", serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.05; letter-spacing: -0.02em; font-weight: 400; margin-bottom: 1.25rem; }
 .case-title em { font-style: italic; color: var(--dark); }
 .case-subtitle { font-size: 17px; line-height: 1.75; color: var(--mid); font-weight: 300; max-width: 620px; margin-bottom: 2.5rem; }
 .case-meta { display: flex; gap: 2.5rem; flex-wrap: wrap; padding: 1.5rem 0; border-top: 0.5px solid rgba(0,0,0,0.1); border-bottom: 0.5px solid rgba(0,0,0,0.1); }
 .meta-item { display: flex; flex-direction: column; gap: 4px; }
-.meta-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); }
+.meta-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); font-weight: 400; }
 .meta-value { font-size: 14px; font-weight: 400; color: var(--dark); }
 
-.case-hero-img { padding: 0 7rem; margin: 3rem 0; }
+.case-hero-img { padding: 0; margin: 3rem auto; max-width: 1100px; }
 .case-hero-img img { width: 100%; border-radius: 4px; display: block; box-shadow: 0 20px 60px rgba(0,0,0,0.10); }
 
-.case-content { max-width: 900px; padding: 0 4.5rem 6rem; }
+.case-content { max-width: 900px; padding: 0 7rem 6rem; margin: 0 auto; }
 .case-section { margin-bottom: 4rem; }
 .case-section-label { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; color: var(--dark); text-transform: uppercase; margin-bottom: 1rem; display: block; }
 .case-section-title { font-family: "DM Serif Display", serif; font-size: 1.75rem; font-weight: 400; letter-spacing: -0.01em; margin-bottom: 1.25rem; }
@@ -43,25 +43,15 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .highlight-box li { font-size: 14px; color: var(--mid); font-weight: 300; display: flex; align-items: flex-start; gap: 10px; line-height: 1.6; }
 .highlight-box li::before { content: "&#10022;"; color: var(--dark); font-size: 10px; margin-top: 4px; flex-shrink: 0; }
 
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
-.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
 
 .img-block { margin: 2rem 0; }
-.img-block img { width: 100%; border-radius: 4px; border: 0.5px solid rgba(0,0,0,0.08); display: block; box-shadow: 0 8px 30px rgba(0,0,0,0.07); }
+.img-block img { width: 100%; border-radius: 4px; border: 0.5px solid rgba(0,0,0,0.08); display: block; box-shadow: 0 8px 30px rgba(0,0,0,0.07); max-width: 100%; }
 .img-caption { font-size: 12px; color: var(--light); text-align: center; margin-top: 0.75rem; font-weight: 300; }
 
-/* Instagram identity block */
-.identity-block { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; margin: 2rem 0; }
-.identity-block img { width: 100%; border-radius: 4px; display: block; box-shadow: 0 8px 30px rgba(0,0,0,0.07); }
-.identity-text { display: flex; flex-direction: column; gap: 1rem; }
-.identity-text h4 { font-family: "DM Serif Display", serif; font-size: 1.25rem; font-weight: 400; }
-.identity-text p { font-size: 14px; color: var(--mid); font-weight: 300; line-height: 1.7; }
-.color-swatch { display: flex; gap: 8px; margin-top: 0.5rem; }
-.swatch { width: 36px; height: 36px; border-radius: 50%; border: 0.5px solid rgba(0,0,0,0.1); }
-
-.flow-steps { display: flex; align-items: center; gap: 8px; margin: 1.5rem 0; flex-wrap: wrap; }
+.flow-steps { display: flex; align-items: center; gap: 0; margin: 1.5rem 0; flex-wrap: wrap; gap: 8px; }
 .flow-step { background: white; border: 0.5px solid rgba(0,0,0,0.1); border-radius: 10px; padding: 0.75rem 1.1rem; font-size: 13px; font-weight: 400; color: var(--dark); }
-.flow-arrow { color: var(--light); font-size: 16px; }
+.flow-arrow { color: var(--light); padding: 0 4px; font-size: 16px; }
 
 .metrics-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
 .metric-card { background: white; border-radius: 4px; padding: 1.25rem 1.5rem; border: 0.5px solid rgba(0,0,0,0.08); }
@@ -79,7 +69,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
   .case-hero { padding: 3rem 1.5rem 2rem; }
   .case-hero-img { padding: 0 1.5rem; }
   .case-content { padding: 0 1.5rem 4rem; }
-  .two-col, .three-col, .identity-block { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
   .metrics-row { grid-template-columns: 1fr; }
   .case-next { padding: 3rem 1.5rem; flex-direction: column; }
 }
